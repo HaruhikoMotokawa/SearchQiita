@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7819661D2A70C6CE0015C89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819661C2A70C6CE0015C89B /* AppDelegate.swift */; };
+		7819661F2A70C6CE0015C89B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819661E2A70C6CE0015C89B /* SceneDelegate.swift */; };
+		781966262A70C6CF0015C89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781966252A70C6CF0015C89B /* Assets.xcassets */; };
+		781966292A70C6CF0015C89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781966272A70C6CF0015C89B /* LaunchScreen.storyboard */; };
+		781966312A70C71B0015C89B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781966302A70C71B0015C89B /* LoginViewController.swift */; };
+		781966332A70C75A0015C89B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781966322A70C75A0015C89B /* Login.storyboard */; };
+		781966352A70C7B10015C89B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781966342A70C7B10015C89B /* Router.swift */; };
+		7819663B2A70D0CC0015C89B /* QiitaAccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819663A2A70D0CC0015C89B /* QiitaAccessTokenModel.swift */; };
+		7819663D2A70D10D0015C89B /* QiitaItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819663C2A70D10D0015C89B /* QiitaItemModel.swift */; };
+		7819663F2A70D1AD0015C89B /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819663E2A70D1AD0015C89B /* QiitaAPI.swift */; };
+		781966422A70D2440015C89B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 781966412A70D2440015C89B /* Alamofire */; };
+		781966452A70D2A90015C89B /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781966442A70D2A90015C89B /* UserDefaults+.swift */; };
+		781966482A70F6820015C89B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781966472A70F6820015C89B /* SearchViewController.swift */; };
+		7819664A2A70F6990015C89B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781966492A70F6990015C89B /* Search.storyboard */; };
+		7819664D2A70F8F70015C89B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7819664C2A70F8F70015C89B /* Lottie */; };
+		7819664F2A70F9B90015C89B /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 7819664E2A70F9B90015C89B /* login.json */; };
+		781966522A710C440015C89B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781966502A710C440015C89B /* CustomCell.swift */; };
+		781966532A710C440015C89B /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781966512A710C440015C89B /* CustomCell.xib */; };
+		7873083A2A777DBD004539A6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787308392A777DBD004539A6 /* WebViewController.swift */; };
+		7873083C2A777DD6004539A6 /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7873083B2A777DD6004539A6 /* Web.storyboard */; };
+		7877357B2A750C32000069F9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7877357A2A750C32000069F9 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		781966192A70C6CE0015C89B /* SearchQiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchQiita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7819661C2A70C6CE0015C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7819661E2A70C6CE0015C89B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		781966252A70C6CF0015C89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		781966282A70C6CF0015C89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7819662A2A70C6CF0015C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		781966302A70C71B0015C89B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		781966322A70C75A0015C89B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		781966342A70C7B10015C89B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7819663A2A70D0CC0015C89B /* QiitaAccessTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAccessTokenModel.swift; sourceTree = "<group>"; };
+		7819663C2A70D10D0015C89B /* QiitaItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemModel.swift; sourceTree = "<group>"; };
+		7819663E2A70D1AD0015C89B /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
+		781966442A70D2A90015C89B /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		781966472A70F6820015C89B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		781966492A70F6990015C89B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		7819664E2A70F9B90015C89B /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		781966502A710C440015C89B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		781966512A710C440015C89B /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		787308392A777DBD004539A6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7873083B2A777DD6004539A6 /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		781966162A70C6CE0015C89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7877357B2A750C32000069F9 /* Kingfisher in Frameworks */,
+				781966422A70D2440015C89B /* Alamofire in Frameworks */,
+				7819664D2A70F8F70015C89B /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		781966102A70C6CE0015C89B = {
+			isa = PBXGroup;
+			children = (
+				7819661B2A70C6CE0015C89B /* SearchQiita */,
+				7819661A2A70C6CE0015C89B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7819661A2A70C6CE0015C89B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				781966192A70C6CE0015C89B /* SearchQiita.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7819661B2A70C6CE0015C89B /* SearchQiita */ = {
+			isa = PBXGroup;
+			children = (
+				781966362A70D0420015C89B /* Delegate */,
+				781966432A70D2720015C89B /* Extention */,
+				781966372A70D05A0015C89B /* Utility */,
+				781966392A70D09B0015C89B /* Model */,
+				781966382A70D0780015C89B /* Login */,
+				781966462A70F6500015C89B /* Search */,
+				7873083D2A777DDF004539A6 /* Web */,
+				781966252A70C6CF0015C89B /* Assets.xcassets */,
+				7819664E2A70F9B90015C89B /* login.json */,
+				781966272A70C6CF0015C89B /* LaunchScreen.storyboard */,
+				7819662A2A70C6CF0015C89B /* Info.plist */,
+			);
+			path = SearchQiita;
+			sourceTree = "<group>";
+		};
+		781966362A70D0420015C89B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7819661C2A70C6CE0015C89B /* AppDelegate.swift */,
+				7819661E2A70C6CE0015C89B /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		781966372A70D05A0015C89B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				781966342A70C7B10015C89B /* Router.swift */,
+				7819663E2A70D1AD0015C89B /* QiitaAPI.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		781966382A70D0780015C89B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				781966302A70C71B0015C89B /* LoginViewController.swift */,
+				781966322A70C75A0015C89B /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		781966392A70D09B0015C89B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7819663A2A70D0CC0015C89B /* QiitaAccessTokenModel.swift */,
+				7819663C2A70D10D0015C89B /* QiitaItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		781966432A70D2720015C89B /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				781966442A70D2A90015C89B /* UserDefaults+.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		781966462A70F6500015C89B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				781966472A70F6820015C89B /* SearchViewController.swift */,
+				781966492A70F6990015C89B /* Search.storyboard */,
+				781966502A710C440015C89B /* CustomCell.swift */,
+				781966512A710C440015C89B /* CustomCell.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7873083D2A777DDF004539A6 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				787308392A777DBD004539A6 /* WebViewController.swift */,
+				7873083B2A777DD6004539A6 /* Web.storyboard */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		781966182A70C6CE0015C89B /* SearchQiita */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "SearchQiita" */;
+			buildPhases = (
+				781966152A70C6CE0015C89B /* Sources */,
+				781966162A70C6CE0015C89B /* Frameworks */,
+				781966172A70C6CE0015C89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchQiita;
+			packageProductDependencies = (
+				781966412A70D2440015C89B /* Alamofire */,
+				7819664C2A70F8F70015C89B /* Lottie */,
+				7877357A2A750C32000069F9 /* Kingfisher */,
+			);
+			productName = SearchQiita;
+			productReference = 781966192A70C6CE0015C89B /* SearchQiita.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		781966112A70C6CE0015C89B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					781966182A70C6CE0015C89B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 781966142A70C6CE0015C89B /* Build configuration list for PBXProject "SearchQiita" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 781966102A70C6CE0015C89B;
+			packageReferences = (
+				781966402A70D2440015C89B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7819664B2A70F8F70015C89B /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				787735792A750C32000069F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 7819661A2A70C6CE0015C89B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				781966182A70C6CE0015C89B /* SearchQiita */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		781966172A70C6CE0015C89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781966532A710C440015C89B /* CustomCell.xib in Resources */,
+				781966292A70C6CF0015C89B /* LaunchScreen.storyboard in Resources */,
+				781966262A70C6CF0015C89B /* Assets.xcassets in Resources */,
+				7819664A2A70F6990015C89B /* Search.storyboard in Resources */,
+				7873083C2A777DD6004539A6 /* Web.storyboard in Resources */,
+				781966332A70C75A0015C89B /* Login.storyboard in Resources */,
+				7819664F2A70F9B90015C89B /* login.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		781966152A70C6CE0015C89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781966452A70D2A90015C89B /* UserDefaults+.swift in Sources */,
+				7873083A2A777DBD004539A6 /* WebViewController.swift in Sources */,
+				7819663B2A70D0CC0015C89B /* QiitaAccessTokenModel.swift in Sources */,
+				781966522A710C440015C89B /* CustomCell.swift in Sources */,
+				781966352A70C7B10015C89B /* Router.swift in Sources */,
+				781966482A70F6820015C89B /* SearchViewController.swift in Sources */,
+				7819661D2A70C6CE0015C89B /* AppDelegate.swift in Sources */,
+				7819663D2A70D10D0015C89B /* QiitaItemModel.swift in Sources */,
+				7819663F2A70D1AD0015C89B /* QiitaAPI.swift in Sources */,
+				781966312A70C71B0015C89B /* LoginViewController.swift in Sources */,
+				7819661F2A70C6CE0015C89B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		781966272A70C6CF0015C89B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				781966282A70C6CF0015C89B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7819662B2A70C6CF0015C89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7819662C2A70C6CF0015C89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7819662E2A70C6CF0015C89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQB9XDMF5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SearchQiita/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.SearchQiita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7819662F2A70C6CF0015C89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQB9XDMF5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SearchQiita/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.SearchQiita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		781966142A70C6CE0015C89B /* Build configuration list for PBXProject "SearchQiita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7819662B2A70C6CF0015C89B /* Debug */,
+				7819662C2A70C6CF0015C89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "SearchQiita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7819662E2A70C6CF0015C89B /* Debug */,
+				7819662F2A70C6CF0015C89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		781966402A70D2440015C89B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7819664B2A70F8F70015C89B /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		787735792A750C32000069F9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		781966412A70D2440015C89B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 781966402A70D2440015C89B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7819664C2A70F8F70015C89B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7819664B2A70F8F70015C89B /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		7877357A2A750C32000069F9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 787735792A750C32000069F9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 781966112A70C6CE0015C89B /* Project object */;
+}
