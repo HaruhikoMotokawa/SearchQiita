@@ -15,22 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         guard let widowScene = (scene as? UIWindowScene) else { return }
+        // 起動経路
         self.window = Router.shared.showRoot(windowScene: widowScene)
-        QiitaAPI.shared.getItems(inputText: "Swift") { result in
-            switch result {
-                case .success(let ok):
-                    ok.forEach { item in
-                        print(item.user.id)
-                        print(item.user.profileImageUrlStr)
-                        print("_________________")
-                    }
-                    print("成功")
-                case .failure(let error):
-                    print(error)
-
-            }
-        }
-
     }
 
     // URLスキームでリダイレクトされてきた時に呼び出される

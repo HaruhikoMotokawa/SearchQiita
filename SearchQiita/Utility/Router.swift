@@ -23,11 +23,13 @@ final class Router {
         return window
     }
 
+    // Searchに遷移
     internal func showSearch(from: UIViewController) {
         guard let toVC = UIStoryboard(name: "Search", bundle: nil).instantiateInitialViewController() else { return }
         show(from: from, to: toVC)
     }
 
+    // Webに遷移
     internal func showWeb(from: UIViewController, qiitaItemModel: QiitaItemModel) {
         guard let toVC = UIStoryboard(name: "Web", bundle: nil).instantiateInitialViewController() as? WebViewController else { return }
         toVC.configure(qiitaItemModel: qiitaItemModel)

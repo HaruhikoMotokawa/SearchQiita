@@ -14,7 +14,6 @@ final class QiitaAPI {
     private let host = "https://qiita.com/api/v2"
     // 登録されたAPIクライアント（アプリの開発者）のIDで４０桁１６進数
     private let clientID = "e24cf0df2406166dcc9b7c96da2fc3ef579afc98"
-
     private let clientSecret = "7cf44190613bd5754508989a7945c4349eaf5423"
     let qiitaState = "bb17785d811bb1913ef54b0a7657de780defaa2d"
 
@@ -87,7 +86,8 @@ final class QiitaAPI {
         }
     }
 
-    // QiitaAPIから必要なデータを取得する
+    // QiitaAPIで必要なデータを取得する
+    // 引数inputTextの文字列をタイトルに該当する記事を取得する
     // 引数はコールバック関数でデフォルトnil
     internal func getItems(inputText: String, completion: ((Result<[QiitaItemModel], Error>) -> Void)? = nil) {
         // エンドポイントを「記事の一覧を作成日時の降順で返します。」に指定
@@ -135,6 +135,7 @@ final class QiitaAPI {
     }
 
     // QiitaAPIから必要なデータを取得する
+    // ユーザーの投稿した記事を取得する
     // 引数はコールバック関数でデフォルトnil
     internal func getMyArticle(completion: ((Result<[QiitaItemModel], Error>) -> Void)? = nil) {
         // エンドポイントを「記事の一覧を作成日時の降順で返します。」に指定
