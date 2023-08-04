@@ -39,6 +39,12 @@ final class SearchViewController: UIViewController {
     /// 記事のデーモデル
     private var qiitaItems: [QiitaItemModel] = []
 
+    // 接続用のプロパティとメソッド
+    private var presenter: !
+    func inject(presenter: LoginPresenterInput) {
+        self.presenter = presenter
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
